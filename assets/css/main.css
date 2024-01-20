@@ -32,11 +32,26 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
+/* BEGIN STYLING ADDED FOR CONTACT US PAGE */
 .form {
 	margin-left: auto !important;
 	margin-right: auto !important;
 }
+/* END STYLING ADDED FOR CONTACT US PAGE */
+/* BEGIN STYLING ADDED FOR ACCOUNT CREATION */
+.big {
+	font-size: 30px;
+}
+.noStyle {
+	list-style: none;
+}
+.listUl {
+	border-bottom: 2px solid #565656;
+}
+.hidden {
+	display: none;
+}
+/* END STYLING ADDED FOR ACCOUNT CREATION */
 
 ol, ul {
 	list-style: none;

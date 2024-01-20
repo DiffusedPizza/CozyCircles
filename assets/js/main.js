@@ -128,3 +128,76 @@
 			});
 
 })(jQuery);
+
+// ACCOUNT CREATION FUNCTIONALITY
+// function toggleSection(sectionId) {
+//     console.log('Toggle Section called with:', sectionId);
+
+//     let targetSection = document.getElementById(sectionId);
+
+//     if (targetSection.style.display === 'block') {
+//         // If the section is already visible, hide it
+//         targetSection.style.display = 'none';
+//     } else {
+//         // If the section is not visible, display it
+//         let allSections = document.querySelectorAll('.hidden');
+//         allSections.forEach(function(section) {
+//             section.style.display = 'none';
+//         });
+
+//         targetSection.style.display = 'block';
+
+//     }
+// }
+
+function toggleSection(sectionId) {
+    console.log('Toggle Section called with:', sectionId);
+
+    let targetSection = document.getElementById(sectionId);
+
+    // Toggle the visibility of the section
+    if (targetSection.style.display === 'block') {
+        targetSection.style.display = 'none';
+
+        // Remove the 'primary' class from the corresponding <a> element
+        let clickedLink = document.getElementById(sectionId + 'Button');
+        if (clickedLink) {
+            clickedLink.classList.remove('primary');
+            console.log('Removed primary class');
+        } else {
+            console.error('Could not find the button element with ID:', sectionId + 'Button');
+        }
+    } else {
+        // Hide all sections
+        let allSections = document.querySelectorAll('.hidden');
+        allSections.forEach(function (section) {
+            section.style.display = 'none';
+        });
+
+        // Remove the 'primary' class from all links
+        let allLinks = document.querySelectorAll('.button.fit');
+        allLinks.forEach(function (link) {
+            link.classList.remove('primary');
+        });
+
+        // Display the clicked section
+        targetSection.style.display = 'block';
+
+        // Add the 'primary' class to the corresponding <a> element
+        let clickedLink = document.getElementById(sectionId + 'Button');
+        if (clickedLink) {
+            clickedLink.classList.add('primary');
+            console.log('Added primary class');
+        } else {
+            console.error('Could not find the button element with ID:', sectionId + 'Button');
+        }
+    }
+}
+
+
+
+
+
+
+
+
