@@ -52,7 +52,11 @@ body {
 	display: none;
 }
 /* END STYLING ADDED FOR ACCOUNT CREATION */
-
+/* BEGIN STYLNG FOR CONSTRUCTION PAGE */
+.title {
+	text-align: center;
+}
+/* END STYLING FOR CONSTRUCTION PAGE */
 ol, ul {
 	list-style: none;
 }
