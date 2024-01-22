@@ -54,7 +54,7 @@
 								At CozyCircles, our mission is to build a warm and inclusive online community where people with disabilities, their families, and caregivers can connect and support each other. 
 								While our platform is specifically designed with these groups in mind, we believe in the power of diversity and welcome everyone to join our community.
 							</p>
-							<h2>What to Expect on CozyCircles</h2>
+							<h2 class="title">What to Expect on CozyCircles</h2>
 							<p>
 								Explore features like Instant Messaging to connect with others in real-time, create or join 'Circles' for group discussions and resource-sharing, and add friends to expand your network. 
 								CozyCircles provides a platform for creating posts, engaging with other users' content, and fostering meaningful connections. 
@@ -62,7 +62,7 @@
 								Please bear with us as we work diligently to enhance your experience on our platform. 
 								Check back soon for updates, and thank you for your patience as we build a cozy space for shared connections and supportive communities.
 							</p>
-							<h2>Under Construction</h2>
+							<h2 class="title">Under Construction</h2>
 							<p>
 								Please bear with us as we work diligently to bring CozyCircles to life. 
 								Our team is dedicated to creating a space that fosters compassion, understanding, and collaboration. 
@@ -94,7 +94,24 @@
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="field half"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="field half"><input type="email" name="email" id="email" placeholder="Email" required /></div>
+										<div class="field">
+											<select name="demo-category" id="demo-category">
+												<option value="">- Purpose of Contact -</option>
+												<option value="1">General Inquiry</option>
+												<option value="1">Feedback</option>
+												<option value="1">Partnership Opportunity</option>
+												<option value="1">Human Resources</option>
+											</select>
+										</div>
+										<div class="field half">
+											<input type="checkbox" id="demo-copy" name="demo-copy">
+											<label for="demo-copy">Email me a copy</label>
+										</div>
+										<div class="field half">
+											<input type="checkbox" id="demo-human" name="demo-human" checked>
+											<label for="demo-human">Subscribe to Updates</label>
+										</div>
 										<div class="field"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
 									<ul class="actions">
