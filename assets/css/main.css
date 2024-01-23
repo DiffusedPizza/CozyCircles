@@ -51,6 +51,9 @@ body {
 .hidden {
 	display: none;
 }
+html {
+	scroll-behavior: smooth;
+}
 /* END STYLING ADDED FOR ACCOUNT CREATION */
 /* BEGIN STYLNG FOR CONSTRUCTION PAGE */
 .title {
