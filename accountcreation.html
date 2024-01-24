@@ -40,16 +40,15 @@
 					<section id="main" class="wrapper style1">
 						<div class="inner">
 							<header class="major">
-								<h1>Creating an Account</h1>
+								<h1>Creating Your Account</h1>
 								<!-- <p>Lorem ipsum dolor sit magna consectetur</p> -->
 							</header>
 
 							<!-- Text -->
 								<section>
-									<h2>Account Types</h2>
-									<h3>
-										At CozyCircles, we offer different account types to cater to the diverse needs of our community. 
-										The following paragraph will provide details on each account type, helping you choose the one that best suits your preferences and requirements.
+									<h2 class="title">Account Types</h2>
+									<h3 class="title">
+										Click the account type for more information.
 									</h3>
 									<ul class="actions fit">
 										<li><a id="primarySectionButton" href="#primarySection" class="button fit" onclick="toggleSection('primarySection')">Primary Account</a></li>
@@ -63,7 +62,6 @@
 									<section id="primarySection" class="hidden">
 										<h2>Primary Account</h2>
 									<h3>
-										Welcome to CozyCircles, where inclusivity is at the heart of our community. <br>
 										A <strong>Primary Account</strong> is your passport to a full range of features, designed for everyone—whether you're a person with disabilities, a regular user, or simply here to connect and engage.
 									</h3>
 									<div class="col-6 col-12-medium">
@@ -106,52 +104,37 @@
 									<hr />
 									<h2>Primary Account</h2>
 									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+										<div class="fields">
+											<div class="field half"><input type="text" name="name" id="name" placeholder="Name" /></div>
+											<div class="field half"><input type="email" name="email" id="email" placeholder="Email" /></div>
+											<div class="field half">
+												<label for="pass">Password (8 characters minimum):</label>
+												<input type="password" id="pass" name="password" minlength="8" required />
+											 </div>
+											 <div class="field half">
+												<label for="pass">Confirm Password:</label>
+												<input type="password" id="pass" name="password" minlength="8" required />
+											 </div>
+											 <div class="field half">
+												<input type="checkbox" id="agreementCheckbox" name="agreementCheckbox">
+												<label for="demo-copy">By checking this box, you confirm that you have read, understood, and agreed to our <strong>Terms of Service</strong>, <strong>Privacy Policy</strong>, and <strong>Community Guidelines</strong>. Please take a moment to review these documents before proceeding with account creation. <br>
+													Click the links below to review <br>
+													<a href="#"><strong>Terms of Service</strong></a> <br>
+													<a href="#"><strong>Privacy Policy</strong></a> <br>
+													<a href="#"><strong>Community Guidelines</strong></a>
+												
+												
+												</label>
 											</div>
-											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<select name="demo-category" id="demo-category">
-													<option value="">- Category -</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<!-- <div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-normal" name="demo-priority">
-												<label for="demo-priority-normal">Normal</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div> -->
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
+											<!-- <div class="field half">
 												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Subscribe for Updates</label>
-											</div>
-											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="primary" /></li>
-													<li><input type="reset" value="Reset" /></li>
-												</ul>
-											</div>
+												<label for="demo-human">Not a robot</label>
+											</div> -->
+											<!-- <div class="field"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div> -->
 										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Create Primary Account" /></li>
+										</ul>
 									</form>
 									<hr />
 									</section>
@@ -377,7 +360,7 @@
 								</section>
 
 							<!-- Image -->
-								<section>
+								<!-- <section>
 									<h2>Image</h2>
 									<h3>Fit</h3>
 									<div class="box alt">
@@ -397,14 +380,14 @@
 									<h3>Left &amp; Right</h3>
 									<p><span class="image left"><img src="images/pic06.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
 									<p><span class="image right"><img src="images/pic07.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-								</section>
+								</section> -->
 
 						</div>
 					</section>
 
 				<!-- Footer -->
 					<section id="footer" class="wrapper split style2">
-						<div class="inner">
+						<!-- <div class="inner">
 							<section>
 								<header>
 									<h3>Magna lorem ipsum</h3>
@@ -429,7 +412,7 @@
 									</ul>
 								</form>
 							</section>
-						</div>
+						</div> -->
 						<div class="copyright">
 							<p>| &copy; 2024 CozyCircles | All rights reserved |</p>
 						</div>
