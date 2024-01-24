@@ -55,6 +55,11 @@ html {
 	scroll-behavior: smooth;
 }
 /* END STYLING ADDED FOR ACCOUNT CREATION */
+/* BEGIN STYLING FOR LOGIN PAGE */
+.login {
+	max-width: 500px;
+}
+/* END STYLING FOR LOGIN PAGE */
 /* BEGIN STYLNG FOR CONSTRUCTION PAGE */
 .title {
 	text-align: center;
