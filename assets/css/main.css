@@ -65,6 +65,11 @@ html {
 	text-align: center;
 }
 /* END STYLING FOR CONSTRUCTION PAGE */
+/* BEGIN STYLING FOR FAQ PAGE */
+.bd-top {
+	border-top: 3px solid #565656;
+}
+/* END STYLING FOR FAQ PAGE */
 ol, ul {
 	list-style: none;
 }
