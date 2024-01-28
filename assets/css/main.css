@@ -54,6 +54,22 @@ body {
 html {
 	scroll-behavior: smooth;
 }
+.password-container {
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.password-input-container {
+    position: relative;
+}
+
+#togglePassword,
+#toggleConfirmPassword {
+    position: absolute;
+    top: 50%;
+    right: 10px;  /* Adjust the right distance as needed */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
 /* END STYLING ADDED FOR ACCOUNT CREATION */
 /* BEGIN STYLING FOR LOGIN PAGE */
 .login {
