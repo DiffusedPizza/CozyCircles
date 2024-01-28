@@ -198,6 +198,7 @@ function toggleSection(sectionId) {
 // Password Toggle
 const togglePassword = document.querySelector('#togglePassword');
 const password = document.querySelector('#pass');
+const confirmPass = document.querySelector('#confirmPass');
 
 togglePassword.addEventListener('click', function (e) {
     // toggle the type attribute
@@ -207,4 +208,13 @@ togglePassword.addEventListener('click', function (e) {
     this.classList.toggle('bi-eye');
 });
 
+const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
 
+toggleConfirmPassword.addEventListener('click', function () {
+    // toggle the type attribute for the confirm password field
+    const type = confirmPass.getAttribute('type') === 'password' ? 'text' : 'password';
+    confirmPass.setAttribute('type', type);
+
+    // toggle the eye / eye slash icon
+    this.classList.toggle('bi-eye');
+});
