@@ -1,0 +1,17 @@
+{
+  "name": "cozycircles",
+  "version": "1.0.0",
+  "description": "CozyCircles is a social media platform designed to create a warm and supportive community for individuals facing health challenges. The platform is built on the idea that connecting with others who share similar experiences can be a powerful source of comfort and inspiration.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1"
+  }
+}
