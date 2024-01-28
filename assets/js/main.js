@@ -200,14 +200,16 @@ const togglePassword = document.querySelector('#togglePassword');
 const password = document.querySelector('#pass');
 const confirmPass = document.querySelector('#confirmPass');
 
-togglePassword.addEventListener('click', function (e) {
-    // toggle the type attribute
+togglePassword.addEventListener('click', function () {
+    // toggle the type attribute for the password field
     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
     password.setAttribute('type', type);
+
     // toggle the eye / eye slash icon
     this.classList.toggle('bi-eye');
 });
 
+// Add a similar event listener for the confirm password field
 const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
 
 toggleConfirmPassword.addEventListener('click', function () {
@@ -218,3 +220,4 @@ toggleConfirmPassword.addEventListener('click', function () {
     // toggle the eye / eye slash icon
     this.classList.toggle('bi-eye');
 });
+

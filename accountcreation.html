@@ -246,9 +246,9 @@
 										<div class="field">
 											<select name="demo-category" id="demo-category">
 												<option value="">- Account Type -</option>
-												<option value="1">Primary Account</option>
-												<option value="1">Family Manager Account</option>
-												<option value="1">Caregiver Account</option>
+												<option value="primaryAcc">Primary Account</option>
+												<option value="familyManagerAcc">Family Manager Account</option>
+												<option value="caregiverAcc">Caregiver Account</option>
 											</select>
 										</div>
 										<div class="field"><input type="text" name="name" id="name" placeholder="Name" /></div>
@@ -256,19 +256,17 @@
 										<div class="field"><input type="email" name="email" id="email" placeholder="Confirm Email" /></div>
 										<div class="field">
 											<label for="pass">Password (8 characters minimum):</label>
-											<div class="password-input-container">
-											<input type="password" id="pass" name="password" minlength="8" placeholder="Password" required />
+											<div class="password-input-container"><input type="password" id="pass" name="password" minlength="8" placeholder="Password" required />
 											<i class="bi bi-eye-slash" id="togglePassword"></i>
 											</div>
 										</div>
-										 <div class="field password-container">
-											<label for="confirmPass">Confirm Password:</label>
-											<div class="password-input-container">
-											<input type="password" id="confirmPass" name="confirmPassword" minlength="8" placeholder="Confirm Password" required />
+										 <div class="field">
+											<label for="pass">Confirm Password:</label>
+											<div class="password-input-container"><input type="password" id="confirmPass" name="confirmPassword" minlength="8" placeholder="Confirm Password" required />
 											<i class="bi bi-eye-slash" id="toggleConfirmPassword"></i>
 											</div>
 										</div>
-										 <div class="field password-container">
+										 <div class="field">
 											<input type="checkbox" id="demo-copy" name="demo-copy" required>
 											<label for="demo-copy">
 												By checking this box, you confirm that you have read, understood, and agreed to our <strong>Terms of Service</strong>, <strong>Privacy Policy</strong>, and <strong>Community Guidelines</strong>. 
