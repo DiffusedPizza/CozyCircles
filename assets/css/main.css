@@ -75,6 +75,16 @@ html {
 .login {
 	max-width: 500px;
 }
+#loginSection .password-input-container {
+    position: relative;
+}
+
+#loginSection #togglePassword {
+    position: absolute;
+    top: 60%;
+    right: 10px; /* Adjust the right offset as needed */
+    transform: translateY(-50%);
+}
 /* END STYLING FOR LOGIN PAGE */
 /* BEGIN STYLNG FOR CONSTRUCTION PAGE */
 .title {

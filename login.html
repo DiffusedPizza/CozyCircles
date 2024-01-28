@@ -9,6 +9,7 @@
 		<title>Login | CozyCircles</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -51,12 +52,14 @@
 
 							<!-- Text -->
 								<section>
-									<section class="form login">
+									<section class="form login" id="loginSection">
 										<form method="post" action="#">
 											<div class="fields">
 												<div class="field"><input type="email" name="email" id="email" placeholder="Email" required /></div>
-												<div class="field"><input type="password" id="pass" name="password" placeholder="Password" minlength="8" required /></div>
-												<!-- <div class="field"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div> -->
+												<div class="field password-input-container">
+													<input type="password" id="pass" name="password" placeholder="Password" minlength="8" required />
+													<i class="bi bi-eye-slash" id="togglePassword"></i>
+												</div>
 											</div>
 											<ul class="actions">
 												<li class="form"><input class="primary" type="submit" value="Login" /></li>
