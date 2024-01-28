@@ -212,7 +212,8 @@ togglePassword.addEventListener('click', function () {
 // Add a similar event listener for the confirm password field
 const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
 
-toggleConfirmPassword.addEventListener('click', function () {
+if (toggleConfirmPassword) {
+	toggleConfirmPassword.addEventListener('click', function () {
     // toggle the type attribute for the confirm password field
     const type = confirmPass.getAttribute('type') === 'password' ? 'text' : 'password';
     confirmPass.setAttribute('type', type);
@@ -220,6 +221,8 @@ toggleConfirmPassword.addEventListener('click', function () {
     // toggle the eye / eye slash icon
     this.classList.toggle('bi-eye');
 });
+}
+
 
 // ACCOUNT FORM TESTING 
 document.addEventListener('DOMContentLoaded', function () {
