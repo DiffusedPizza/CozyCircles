@@ -221,3 +221,52 @@ toggleConfirmPassword.addEventListener('click', function () {
     this.classList.toggle('bi-eye');
 });
 
+// ACCOUNT FORM TESTING 
+document.addEventListener('DOMContentLoaded', function () {
+    // Form Submission
+    const registrationForm = document.querySelector('#registrationForm');
+
+    registrationForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get form values
+        const accountType = document.querySelector('#demo-category').value;
+        const name = document.querySelector('#name').value;
+        const email = document.querySelector('#email').value;
+        const password = document.querySelector('#pass').value;
+        const confirmPassword = document.querySelector('#confirmPass').value;
+        const checkbox = document.querySelector('#demo-copy');
+
+        // Validate form data if needed
+        // Check if an account type is selected
+        if (accountType === '') {
+            alert('Please select an account type.');
+            return;
+        }
+        // Check if passwords match
+        if (password !== confirmPassword) {
+            alert('Passwords do not match. Please check and try again.');
+            return;
+        }
+
+        // Check if the checkbox is checked
+        if (!checkbox.checked) {
+            alert('Please confirm that you have read and agreed to the terms.');
+            return;
+        }
+
+        // Create the user account with the selected account type
+        const userAccount = {
+            accountType: accountType,
+            name: name,
+            email: email,
+            password: password
+        };
+
+        // Log the user account information to the console
+        console.log('User account:', userAccount);
+
+        // You can add additional logic here for form submission, validation, etc.
+    });
+});
+
