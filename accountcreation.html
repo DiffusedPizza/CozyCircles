@@ -9,6 +9,7 @@
 		<title>Create an Account | CozyCircles</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -253,11 +254,20 @@
 										<div class="field"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="field"><input type="email" name="email" id="email" placeholder="Email" /></div>
 										<div class="field"><input type="email" name="email" id="email" placeholder="Confirm Email" /></div>
-										<div class="field"><label for="pass">Password (8 characters minimum):</label><input type="password" id="pass" name="password" minlength="8" placeholder="Password" required /></div>
-										 <div class="field"><label for="pass">Confirm Password:</label><input type="password" id="pass" name="password" minlength="8" placeholder="Confirm Password" required /></div>
+										<div class="field">
+											<label for="pass">Password (8 characters minimum):</label>
+											<input type="password" id="pass" name="password" minlength="8" placeholder="Password" required />
+											<i class="bi bi-eye-slash" id="togglePassword"></i>
+										</div>
+										 <div class="field">
+											<label for="pass">Confirm Password:</label>
+											<input type="password" id="pass" name="passwordConfirm" minlength="8" placeholder="Confirm Password" required />
+										</div>
 										 <div class="field">
 											<input type="checkbox" id="demo-copy" name="demo-copy" required>
-											<label for="demo-copy">By checking this box, you confirm that you have read, understood, and agreed to our <strong>Terms of Service</strong>, <strong>Privacy Policy</strong>, and <strong>Community Guidelines</strong>. Please take a moment to review these documents before proceeding with account creation. <br>
+											<label for="demo-copy">
+												By checking this box, you confirm that you have read, understood, and agreed to our <strong>Terms of Service</strong>, <strong>Privacy Policy</strong>, and <strong>Community Guidelines</strong>. 
+												Please take a moment to review these documents before proceeding with account creation. <br>
 												Click the links below to review <br>
 												<a href="#"><strong>Terms of Service</strong></a> <br>
 												<a href="#"><strong>Privacy Policy</strong></a> <br>
