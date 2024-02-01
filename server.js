@@ -11,7 +11,7 @@ const app = express();
 // const todoRoutes = require('./routes/todos')
 
 require('dotenv').config({path: './config/.env'})
-const port = 3000;
+
 require('dotenv').config();
 // Passport config
 // require('.config/passport')(passport)
@@ -48,6 +48,8 @@ app.get('/', (req, res) => {
     res.send('Hello, world!');
 });
 
-app.listen(port, () => {
-    console.log(`Server listening at http://localhost:${port}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Server runnin on port ${process.env.PORT}`);
 });
+
+// module.exports = router;
