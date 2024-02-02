@@ -70,7 +70,10 @@ const bcrypt = require('bcrypt');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const session = require('express-session');
-require('dotenv').config();
+//Use .env file in config folder
+require("dotenv").config({ path: "./config/.env" });
+// Passport config
+require("./config/passport")(passport);
 
 const User = require('./models/User');
 
@@ -94,32 +97,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({ secret: process.env.SESSION_SECRET, resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
-
-// Passport local strategy for user login
-passport.use(new LocalStrategy((username, password, done) => {
-  User.findOne({ username: username }, (err, user) => {
-    if (err) return done(err);
-    if (!user) return done(null, false, { message: 'Incorrect username.' });
-
-    bcrypt.compare(password, user.password, (err, result) => {
-      if (err) return done(err);
-      if (!result) return done(null, false, { message: 'Incorrect password.' });
-
-      return done(null, user);
-    });
-  });
-}));
-
-// Passport serialization and deserialization
-passport.serializeUser((user, done) => {
-  done(null, user.id);
-});
-
-passport.deserializeUser((id, done) => {
-  User.findById(id, (err, user) => {
-    done(err, user);
-  });
-});
 
 // Register route to create a new user
 app.post('/register', (req, res) => {
