@@ -61,26 +61,37 @@
 // ***
 // module.exports = router;
 
-const express = require('express');
+
+
+const express = require("express");
 const app = express();
 const path = require('path');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const bcrypt = require('bcrypt');
-const passport = require('passport');
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const bcrypt = require("bcrypt");
+const passport = require("passport");
 const LocalStrategy = require('passport-local').Strategy;
-const session = require('express-session');
+const session = require("express-session");
+const MongoStore = require("connect-mongo");
+const methodOverride = require("method-override");
+const flash = require("express-flash");
+const logger = require("morgan");
+const connectDB = require("./config/database");
+const mainRoutes = require("./routes/main");
+const postRoutes = require("./routes/posts");
+
 //Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
 // Passport config
 require("./config/passport")(passport);
+//Connect To Database
+connectDB();
 
 const User = require('./models/User');
 
-// const PORT = process.env.PORT || 3000;
 
 mongoose.connect(process.env.DB_STRING, {
-  dbName: 'test',
+  dbName: 'users',
 });
 
 const db = mongoose.connection;
@@ -103,7 +114,7 @@ app.post('/register', (req, res) => {
   const { name, password } = req.body;
 
   // Check if the username is already taken
-  User.findOne({ name: name }, (err, existingUser) => {
+  User.findOne({ userName: userName }, (err, existingUser) => {
     if (err) return res.status(500).send('Internal Server Error');
 
     if (existingUser) {
