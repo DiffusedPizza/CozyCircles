@@ -1,0 +1,126 @@
+<%- include('partials/header') -%>
+<!-- 
+<main class="container">
+  <div class="row justify-content-center">
+    <section class="form login" id="loginSection">
+      <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
+      <div class="alert alert-danger"><%= el.msg %></div>
+      <% }) %> <% } %> <% if (locals.messages.info) { %> <%
+      messages.info.forEach( el => { %>
+      <div class="alert alert-info"><%= el.msg %></div>
+      <% }) %> <% } %>
+      <form id="loginForm" action="/login" method="POST">
+        <div class="fields">
+          <div class="field"><input type="email" name="email" id="email" placeholder="Email" required /></div>
+          <div class="field password-input-container">
+            <input type="password" id="pass" name="password" placeholder="Password" minlength="8" required />
+            <i class="bi bi-eye-slash" id="togglePassword"></i>
+          </div>
+        </div>
+        <ul class="actions">
+          <li class="form"><input class="primary" type="submit" value="Login" /></li>
+        </ul>
+      </form>
+    </section>
+  </div>
+</main> -->
+<!DOCTYPE HTML>
+<!--
+	Reflex by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Login | CozyCircles</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" /> -->
+		<!-- <link rel="stylesheet" href="/public/css/style.css" /> -->
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Menu -->
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="cg.html">Community Guidelines</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms of Service</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+				</ul>
+				<ul class="actions stacked">
+					<li><a href="accountcreation.html" class="button fit primary">Create Account</a></li>
+					<!-- <li><a href="#" class="button fit">Log In</a></li> -->
+				</ul>
+			</nav>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper style1">
+						<div class="inner">
+							<header class="major">
+								<h1>CozyCircles</h1>
+								<p>Beyond Barriers, Your Space, Your Voice.</p>
+							</header>
+
+							<!-- Text -->
+								<section>
+									<section class="form login" id="loginSection">
+                    <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
+                      <div class="alert alert-danger"><%= el.msg %></div>
+                      <% }) %> <% } %> <% if (locals.messages.info) { %> <%
+                      messages.info.forEach( el => { %>
+                      <div class="alert alert-info"><%= el.msg %></div>
+                      <% }) %> <% } %>
+                      <form id="loginForm" action="/login" method="POST">
+                        <div class="fields">
+                          <div class="field"><input type="email" name="email" id="email" placeholder="Email" required /></div>
+                          <div class="field password-input-container">
+                            <input type="password" id="pass" name="password" placeholder="Password" minlength="8" required />
+                            <i class="bi bi-eye-slash" id="togglePassword"></i>
+                          </div>
+                        </div>
+                        <ul class="actions">
+                          <li class="form"><input class="primary" type="submit" value="Login" /></li>
+                        </ul>
+                      </form>
+									</section>
+								</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<section id="footer" class="wrapper split style2 login-footer">
+						<div class="inner">
+						</div>
+						<div class="copyright">
+							<p>| &copy; 2024 CozyCircles | All rights reserved |</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
+
+<!-- <%- include('partials/footer') -%> -->
