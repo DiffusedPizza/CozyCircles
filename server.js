@@ -91,7 +91,7 @@ const User = require('./models/User');
 
 
 mongoose.connect(process.env.DB_STRING, {
-  dbName: 'users',
+  dbName: 'test',
 });
 
 const db = mongoose.connection;
