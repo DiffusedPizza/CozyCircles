@@ -1,5 +1,5 @@
 <%- include('partials/header') -%>
-    <main class="container">
+    <!-- <main class="container">
         <div class="row justify-content-center">
             <section class="col-6 mt-5">
                 <% if (locals.messages.errors) { %>
@@ -34,6 +34,177 @@
                   </form>
             </section>
         </div>
-    </main>
+    </main> -->
+
+      <head>
+        <title>Create an Account | CozyCircles</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+      </head>
+      <body class="is-preload">
+    
+        <!-- Header -->
+          <header id="header">
+            <nav>
+              <ul>
+                <li><a href="#menu">Menu</a></li>
+              </ul>
+            </nav>
+          </header>
+    
+        <!-- Menu -->
+          <nav id="menu">
+            <h2>Menu</h2>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="cg.html">Community Guidelines</a></li>
+            </ul>
+            <ul class="actions stacked">
+              <li><a href="/login" class="button fit">Log In</a></li>
+            </ul>
+          </nav>
+    
+        <!-- Wrapper -->
+          <div id="wrapper">
+    
+            <!-- Main -->
+              <section id="main" class="wrapper style1">
+                <div class="inner">
+                  <header class="major">
+                    <!-- <p>Lorem ipsum dolor sit magna consectetur</p> -->
+                  </header>
+    
+                  <!-- Text -->
+                    <section>
+                      <h2 class="title">Account Types</h2>
+                      <h3 class="title">
+                        Click the account type for more information.
+                      </h3>
+                      <ul class="actions fit">
+                        <li><a id="primarySectionButton" href="#primarySection" class="button fit" onclick="toggleSection('primarySection')">Primary Account</a></li>
+                        <li><a id="familySectionButton" href="#familySection" class="button fit" onclick="toggleSection('familySection')">Family Manager Account</a></li>
+                        <li><a id="caregiverSectionButton" href="#caregiverSection" class="button fit" onclick="toggleSection('caregiverSection')">Caregiver Account</a></li>
+                        
+                      </ul>
+                      
+                    </section>
+    
+                </div>
+              </section>
+    
+            <!-- Footer -->
+              <section id="footer" class="wrapper split style2">
+                <h2 class="title">Create Your Account</h2>
+                <div class="inner">
+                  <section class="form">
+                    <!-- <form action="/signup" id="registrationForm">
+                      <div class="fields">
+                        <div class="field">
+                          <select name="demo-category" id="demo-category">
+                            <option value="">- Account Type -</option>
+                            <option value="primaryAcc">Primary Account</option>
+                            <option value="familyManagerAcc">Family Manager Account</option>
+                            <option value="caregiverAcc">Caregiver Account</option>
+                          </select>
+                        </div>
+                        <div class="field"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                        <div class="field"><input type="email" name="email" id="email" placeholder="Email" /></div> -->
+                        <!-- <div class="field"><input type="email" name="email" id="email" placeholder="Confirm Email" /></div> -->
+                        <!-- <div class="field">
+                          <label for="pass">Password (8 characters minimum):</label>
+                          <div class="password-input-container"><input type="password" id="pass" name="password" minlength="8" placeholder="Password" required />
+                          <i class="bi bi-eye-slash" id="togglePassword"></i>
+                          </div>
+                        </div>
+                         <div class="field">
+                          <label for="pass">Confirm Password:</label>
+                          <div class="password-input-container"><input type="password" id="confirmPass" name="confirmPassword" minlength="8" placeholder="Confirm Password" required />
+                          <i class="bi bi-eye-slash" id="toggleConfirmPassword"></i>
+                          </div>
+                        </div> -->
+                         <!-- <div class="field">
+                          <input type="checkbox" id="demo-copy" name="demo-copy" required>
+                          <label for="demo-copy">
+                            By checking this box, you confirm that you have read, understood, and agreed to our <strong>Terms of Service</strong>, <strong>Privacy Policy</strong>, and <strong>Community Guidelines</strong>. 
+                            Please take a moment to review these documents before proceeding with account creation. <br>
+                            Click the links below to review <br>
+                            <a href="#"><strong>Terms of Service</strong></a> <br>
+                            <a href="#"><strong>Privacy Policy</strong></a> <br>
+                            <a href="cg.html"><strong>Community Guidelines</strong></a>
+                          </label>
+                        </div> -->
+                        <!-- <div class="field"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div> -->
+                      <!-- </div> -->
+                      <!-- <ul class="actions">
+                        <li class="form"><input type="submit" value="Create Account" /></li>
+                      </ul>
+                    </form> -->
+                    <% if (locals.messages.errors) { %>
+                      <% messages.errors.forEach( el => { %>
+                          <div class="alert alert-danger"><%= el.msg %></div>
+                      <% }) %>    
+                  <% } %>
+                  <% if (locals.messages.info) { %>
+                      <% messages.info.forEach( el => { %>
+                          <div class="alert alert-info"><%= el.msg %></div>
+                      <% }) %>    
+                  <% } %>
+                  <form action="/signup" method="POST">
+                      <!-- <div class="mb-3">
+                        <label for="accountType">Please choose an account type.</label>
+                        <select name="accountType" id="accountType">
+                          <option name="accountType" value="">- Account Type -</option>
+                          <option name="accountType" value="Primary Account">Primary Account</option>
+                          <option name="accountType" value="Family Manager Account">Family Manager Account</option>
+                          <option name="accountType" value="Caregiver Account">Caregiver Account</option>
+                        </select>
+                      </div> -->
+                      <div class="mb-3">
+                          <label for="userName" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="userName" name="userName">
+                        </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="password" class="form-label">Password (8 characters minimum)</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                      </div>
+                      <div class="mb-3">
+                          <label for="confirmPassword" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
+                        </div>
+                        <div class="mb-3">
+                          <input type="checkbox" id="demo-copy" name="demo-copy" required>
+                          <label for="demo-copy">
+                            By checking this box, you confirm that you have read, understood, and agreed to our <strong>Terms of Service</strong>, <strong>Privacy Policy</strong>, and <strong>Community Guidelines</strong>. 
+                            Please take a moment to review these documents before proceeding with account creation. <br>
+                            Click the links below to review <br>
+                            <a href="#"><strong>Terms of Service</strong></a> <br>
+                            <a href="#"><strong>Privacy Policy</strong></a> <br>
+                            <a href="cg.html"><strong>Community Guidelines</strong></a>
+                          </label>
+                        </div>
+                        <ul class="actions">
+                          <li class="form"><input type="submit" value="Create Account" /></li>
+                        </ul>
+                    </form>
+
+                  </section>
+                </div>
+                <div class="copyright">
+                  <p>| &copy; 2024 CozyCircles | All rights reserved |</p>
+                </div>
+              </section>
+    
+          </div>
+    
+      </body>
 
 <%- include('partials/footer') -%>
