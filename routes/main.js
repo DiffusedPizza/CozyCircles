@@ -15,4 +15,10 @@ router.get("/logout", authController.logout);
 router.get("/signup", authController.getSignup);
 router.post("/signup", authController.postSignup);
 
+// Route to HTML document in the root folder
+router.get("/learnmore", (req, res) => {
+    res.render("learnmore");
+  });
+  
+
 module.exports = router;
