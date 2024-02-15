@@ -27,7 +27,9 @@ router.get("/faq", (req, res) => {
 router.get("/contactus", (req, res) => {
     res.render("contactus");
   })
-
+router.get("/resources", (req, res) => {
+  res.render("resources");
+})
 
 
 
