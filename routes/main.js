@@ -18,6 +18,21 @@ router.post("/signup", authController.postSignup);
 router.get("/learnmore", (req, res) => {
     res.render("learnmore");
   });
-  
+router.get("/cg", (req, res) => {
+    res.render("cg");
+  ;});
+router.get("/faq", (req, res) => {
+    res.render("faq");
+  })
+router.get("/contactus", (req, res) => {
+    res.render("contactus");
+  })
+
+
+
+
+
+
+
 
 module.exports = router;
