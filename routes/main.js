@@ -15,30 +15,40 @@ router.get("/logout", authController.logout);
 router.get("/signup", authController.getSignup);
 router.post("/signup", authController.postSignup);
 
-router.get("/learnmore", (req, res) => {
-    res.render("learnmore");
-  });
+
+  // PAGE FOR COMMUNITY GUIDELINES
 router.get("/cg", (req, res) => {
     res.render("cg");
   ;});
-router.get("/faq", (req, res) => {
-    res.render("faq");
-  })
+    // PAGE WITH CONTACT INFORMATION FOR USERS TO REACH US
 router.get("/contactus", (req, res) => {
     res.render("contactus");
   })
-router.get("/resources", (req, res) => {
-  res.render("resources");
-})
+  // PAGE FOR FREQUENTLY ASKED QUESTIONS
+router.get("/faq", (req, res) => {
+    res.render("faq");
+  })
+// PAGE TO LEARN MORE ABOUT COZYCIRCLES
+router.get("/learnmore", (req, res) => {
+    res.render("learnmore");
+  });
+  // INTRODUCTION PAGE FOR LAURA
 router.get("/meetlaura", (req, res) => {
   res.render("meetlaura");
 })
-router.get("/tos", (req, res) => {
-  res.render("tos");
-})
+// PAGE FOR PRIVACY POLICY
 router.get("/privacypolicy", (req, res) => {
   res.render("privacypolicy");
 })
+  // PAGE LISTING GENERAL RESOURCES
+router.get("/resources", (req, res) => {
+  res.render("resources");
+})
+// PAGE FOR TERMS OF SERVICE
+router.get("/tos", (req, res) => {
+  res.render("tos");
+})
+
 
 
 
