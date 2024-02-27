@@ -30,7 +30,9 @@ router.get("/contactus", (req, res) => {
 router.get("/resources", (req, res) => {
   res.render("resources");
 })
-
+router.get("/meetlaura", (req, res) => {
+  res.render("meetlaura");
+})
 
 
 
