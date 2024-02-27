@@ -36,7 +36,9 @@ router.get("/meetlaura", (req, res) => {
 router.get("/tos", (req, res) => {
   res.render("tos");
 })
-
+router.get("/privacypolicy", (req, res) => {
+  res.render("privacypolicy");
+})
 
 
 
