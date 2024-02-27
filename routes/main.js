@@ -16,15 +16,15 @@ router.get("/signup", authController.getSignup);
 router.post("/signup", authController.postSignup);
 
 
-  // PAGE FOR COMMUNITY GUIDELINES
+// PAGE FOR COMMUNITY GUIDELINES
 router.get("/cg", (req, res) => {
     res.render("cg");
   ;});
-    // PAGE WITH CONTACT INFORMATION FOR USERS TO REACH US
+// PAGE WITH CONTACT INFORMATION FOR USERS TO REACH US
 router.get("/contactus", (req, res) => {
     res.render("contactus");
   })
-  // PAGE FOR FREQUENTLY ASKED QUESTIONS
+// PAGE FOR FREQUENTLY ASKED QUESTIONS
 router.get("/faq", (req, res) => {
     res.render("faq");
   })
@@ -32,7 +32,7 @@ router.get("/faq", (req, res) => {
 router.get("/learnmore", (req, res) => {
     res.render("learnmore");
   });
-  // INTRODUCTION PAGE FOR LAURA
+// INTRODUCTION PAGE FOR LAURA
 router.get("/meetlaura", (req, res) => {
   res.render("meetlaura");
 })
@@ -40,7 +40,7 @@ router.get("/meetlaura", (req, res) => {
 router.get("/privacypolicy", (req, res) => {
   res.render("privacypolicy");
 })
-  // PAGE LISTING GENERAL RESOURCES
+// PAGE LISTING GENERAL RESOURCES
 router.get("/resources", (req, res) => {
   res.render("resources");
 })
