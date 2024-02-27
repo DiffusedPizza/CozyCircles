@@ -33,6 +33,14 @@ router.get("/resources", (req, res) => {
 router.get("/meetlaura", (req, res) => {
   res.render("meetlaura");
 })
+router.get("/tos", (req, res) => {
+  res.render("tos");
+})
+
+
+
+
+
 
 
 
