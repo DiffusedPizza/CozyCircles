@@ -48,7 +48,7 @@ router.get("/resources", (req, res) => {
 router.get("/tos", (req, res) => {
   res.render("tos");
 })
-// 
+// FUTURE PAGES ROUTE BELOW
 
 
 
