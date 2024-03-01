@@ -34,7 +34,9 @@ router.get("/learnmore", (req, res) => {
   });
 // INTRODUCTION PAGE FOR LAURA
 router.get("/meetlaura", (req, res) => {
-  res.render("meetlaura");
+  res.render("meetlaura", {
+    title: "Meet Laura"
+  })
 })
 // PAGE FOR PRIVACY POLICY
 router.get("/privacypolicy", (req, res) => {
