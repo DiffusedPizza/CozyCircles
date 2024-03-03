@@ -67,7 +67,7 @@ router.get("/tos", (req, res) => {
 // FUTURE PAGES ROUTE BELOW
 router.get("/Page", (req, res) => {
   res.render("Page", {
-    title: "Page" //THIS IS THE TITLE THAT IS GOING TO DISPLAY IN THE TAB
+    title: "Page" // THIS IS THE TITLE THAT IS GOING TO DISPLAY IN THE TAB
   })
 })
 
