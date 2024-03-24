@@ -66,24 +66,24 @@
 							<!-- Text -->
 								<section>
 									<section class="form login" id="loginSection">
-                    <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
-                      <div class="alert alert-danger"><%= el.msg %></div>
-                      <% }) %> <% } %> <% if (locals.messages.info) { %> <%
-                      messages.info.forEach( el => { %>
-                      <div class="alert alert-info"><%= el.msg %></div>
-                      <% }) %> <% } %>
-                      <form id="loginForm" action="/login" method="POST">
-                        <div class="fields">
-                          <div class="field"><input type="email" name="email" id="email" placeholder="Email" required /></div>
-                          <div class="field password-input-container">
-                            <input type="password" id="pass" name="password" placeholder="Password" minlength="8" required />
-                            <i class="bi bi-eye-slash" id="togglePassword"></i>
-                          </div>
-                        </div>
-                        <ul class="actions">
-                          <li class="form"><input class="primary" type="submit" value="Login" /></li>
-                        </ul>
-                      </form>
+										<% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
+										<div class="alert alert-danger"><%= el.msg %></div>
+										<% }) %> <% } %> <% if (locals.messages.info) { %> <%
+										messages.info.forEach( el => { %>
+										<div class="alert alert-info"><%= el.msg %></div>
+										<% }) %> <% } %>
+										<form id="loginForm" action="/login" method="POST">
+											<div class="fields">
+												<div class="field"><input type="email" name="email" id="email" placeholder="Email" required /></div>
+												<div class="field password-input-container">
+													<input type="password" id="pass" name="password" placeholder="Password" minlength="8" required />
+													<i class="bi bi-eye-slash" id="togglePassword"></i>
+												</div>
+											</div>
+											<ul class="actions">
+												<li class="form"><input class="primary" type="submit" value="Login" /></li>
+											</ul>
+										</form>
 									</section>
 								</section>
 						</div>
