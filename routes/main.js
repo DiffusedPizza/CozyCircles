@@ -16,7 +16,12 @@ router.get("/logout", authController.logout);
 router.get("/signup", authController.getSignup);
 router.post("/signup", authController.postSignup);
 
-
+// FOR USE WITH HOME PAGE LATER
+router.get("#", (req, res) => {
+  res.render("#", {
+    title: "Home Page"
+  })
+;});
 // PAGE FOR COMMUNITY GUIDELINES
 router.get("/cg", (req, res) => {
     res.render("cg", {
