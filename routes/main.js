@@ -22,6 +22,7 @@ router.get("#", (req, res) => {
     title: "Home Page"
   })
 ;});
+// THE ABOVE IS TEMPORARY AND SUBJECT TO CHANGE
 // PAGE FOR COMMUNITY GUIDELINES
 router.get("/cg", (req, res) => {
     res.render("cg", {
