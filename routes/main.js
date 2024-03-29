@@ -18,9 +18,9 @@ router.post("/signup", authController.postSignup);
 
 // FOR USE WITH HOME PAGE LATER
 router.get("#", (req, res) => {
-  res.render("#", {
-    title: "Home Page"
-  })
+    res.render("#", {
+      title: "Home Page"
+    })
 ;});
 // THE ABOVE IS TEMPORARY AND SUBJECT TO CHANGE
 // PAGE FOR COMMUNITY GUIDELINES
